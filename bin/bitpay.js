@@ -270,7 +270,7 @@ bitpay
 
       // get user info
       client.on('ready', function() {
-        client.as('user').get('user', function(err, user) {
+        client.as('user').get('users/me', function(err, user) {
           if (err) {
             return console.log('Error:', err.error);
           }
